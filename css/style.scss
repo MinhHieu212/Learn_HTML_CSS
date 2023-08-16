@@ -56,6 +56,7 @@ body {
 // Header
 
 #header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,11 +67,19 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+    transition: all 0.3s ease;
+    & .mobile {
+      display: none;
+    }
     & #navbar {
         display: flex;
         justify-content: center;
         align-items: center;
         list-style-type: none;
+        transition: all 0.3s ease;
+        & #close {
+          display: none;
+        }
         & li {
             font-size: 16px;
             font-weight: 600;
@@ -85,7 +94,6 @@ body {
                 &.active {
                     position: relative;
                     color: #0881799a;
-
                     &::after {
                         content: "";
                         position: absolute;
@@ -309,11 +317,12 @@ body {
 #sm-banner {
   padding: 40px 80px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   & .banner-box {
-    min-width: calc(50% - 30px);
+    min-width: 48%;
     height: 50vh;
     background-image: url("../img/banner/b17.jpg");
     background-size: cover;
@@ -403,8 +412,7 @@ body {
 }
 
 #newLetters {
-  margin-top: 20px; 
-  background-image: url("../img/banner/b14.jpg");
+  margin-top: 40px; 
   background-color: #041e42 ;
   background-position: 20% 30%;
   background-repeat: no-repeat;
@@ -448,7 +456,7 @@ body {
   & button {
     height: 3.124rem;
     font-size: 14px;
-    padding: 0 1.23rem;
+    padding: 0 1rem;
     outline: none;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -456,7 +464,7 @@ body {
     color: white;
     font-weight: bold;
     margin-left: 10px;
-    width: 20%;
+    width: 140px;
   }
 }
 
@@ -464,6 +472,7 @@ body {
   display: flex;
   padding: 20px 80px 80px;
   justify-content: space-between;
+  flex-wrap: wrap;
   
   & .col {
     display: flex;
@@ -518,8 +527,248 @@ body {
     width: 30%;
     display: flex;
     justify-content: space-between; 
-    & a .fab {
+    & a .fab  {
       color: #000000;
     }
   }
+}
+
+@media screen and (max-width: 899px) {
+    #header {
+      & #navbar {
+        display: flex;
+        position: fixed;
+        right: -30%;
+        top: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        list-style-type: none;  
+        width: 30%;
+        height: 100vh;
+        background-color: #e3e6f3 ;
+        padding: 80px 0 0 10px;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.103);
+        & li {
+          margin-bottom: 20px; 
+          & .bag {
+            display: none;
+          }
+        }
+        &.remove {
+          right: -30%;
+        }
+        &.active {
+          right: 0;
+        }
+        & #close {
+          display: flex;
+          position: absolute;
+          top: 30px;
+          left: 20px;
+          text-decoration: none;
+          font-size: 22px;
+        }
+      }
+      & .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & i {
+          padding-left: 20px;
+          font-size: 22px;
+        }
+        & .bag {
+          color: black;
+          font-size: 22px;
+        }
+      }
+    }
+
+    #hero {
+      background-position: top 30% right 30%;
+      height: 70vh;
+      padding: 0px 80px;
+    }
+
+    #newLetters {
+      justify-content: center;
+      & .form {
+        width: 70%;
+      }
+    }
+
+    #feature {
+      justify-content: center;
+      & .fe__box {
+        margin: 10px;
+      }
+    }
+
+    #products1 {
+      & .pro-container {
+        justify-content: center;
+        & .pro {
+          width: 45%;
+          margin: 15px;
+        }
+      }
+    }
+
+    #banner {
+      & h2 {
+        font-size: 28px;
+      }
+    }
+
+    #sm-banner .banner-box {
+      min-width: 100%;
+      height: 40vh;
+      margin-bottom: 20px;
+    }
+
+    #banner3 {
+      padding: 0px 20px;
+      & .banner-box {
+        min-width: 28%;
+        height: 25vh;
+        margin: 0 10px;
+      }
+    }
+
+    #footer {
+      & .col {
+        margin-bottom: 20px;
+      }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    #header {
+      padding: 20px 30px;
+      & #navbar {
+        display: flex;
+        position: fixed;
+        right: -40%;
+        top: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        list-style-type: none;  
+        width: 40%;
+        height: 100vh;
+        background-color: #e3e6f3 ;
+        padding: 80px 0 0 10px;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.103);
+        & li {
+          margin-bottom: 20px; 
+          & .bag {
+            display: none;
+          }
+        }
+        &.remove {
+          right: -40%;
+        }
+        &.active {
+          right: 0;
+        }
+        & #close {
+          display: flex;
+          position: absolute;
+          top: 30px;
+          left: 20px;
+          text-decoration: none;
+          font-size: 22px;
+        }
+      }
+      & .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & i {
+          padding-left: 20px;
+          font-size: 22px;
+        }
+        & .bag {
+          color: black;
+          font-size: 22px;
+        }
+      }
+    }
+
+    #hero {
+      background-position: top 30% right 45%;
+      height: 70vh;
+      padding: 0px 20px;
+    }
+
+    #newLetters {
+      justify-content: flex-start;
+      padding: 0 10px;
+      & .form {
+        transform: translateY(-15px);
+        width: 100%;
+      }
+    }
+
+    #feature {
+      justify-content: center;
+      padding: 20px 30px;
+      & .fe__box {
+        width: 40%;
+        margin: 10px;
+      }
+    }
+
+    #products1 {
+      padding: 20px 30px;
+      & .pro-container {
+        justify-content: center;
+        & .pro {
+          width: 45%;
+          margin: 15px;
+        }
+      }
+    }
+
+    #banner {
+      align-items: flex-start;
+      padding: 0px 20px;
+      & h2 {
+        font-size: 20px;
+      }
+    }
+
+    #sm-banner {
+      padding: 10px;
+     &.banner-box {
+      min-width: 100%;
+      height: 40vh;
+      margin-bottom: 20px;
+      }
+    }
+
+    #banner3 {
+      padding: 0px;
+      justify-content: space-between;
+      & .banner-box {
+        min-width: 28%;
+        height: 25vh;
+        padding: 0 5px;       
+        & h2 {
+          font-size: 15px;
+        }
+        & h3 {
+          font-size: 10px;
+        }
+      }
+    }
+
+    #footer {
+
+      padding: 20px 30px;
+      & .col {
+        margin-bottom: 20px;
+      }
+    }
 }
