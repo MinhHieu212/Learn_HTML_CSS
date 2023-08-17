@@ -1,22 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-
+        <title>Tech2etc Ecommerce Tutorial</title>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
+        <section id="header">
+            <a href="index.html"><img src="img/logo.png" class="logo"></a>
+            <div>
+                <ul id="navbar">
+                    <i  id="close" class="far fa-times"></i>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="contact.html">Contact </a></li>
+                    <li><a href="#"><i class="far fa-shopping-bag bag"></i></a></li>
+                </ul>
+                <div class="mobile">
+                    <a href="#"><i class="far fa-shopping-bag bag"></i></a>
+                    <i id="bar" class="fas fa-outdent"></i>
+                </div>
+            </div>
+        </section>
 
+        <section id="contact-header">
+            <h2>#Let's Talks</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </section>
+        
+        <section id="contact-details">
+            <div class="detais">
+                <span>GET IN TOUCH</span>
+                <h2>Visit one of our agency locations or contact us today</h2>
+                <h3>Head office</h3>
+                <div >
+                    <li>
+                        <i class="fal fa-map"></i>
+                        <p>56 Glassford Street Glasgow G1 1UL New York</p>
+                    </li>
+                    <li>
+                        <i class="fal fa-box"></i>
+                        <p>contact@example.com</p>
+                    </li>
+                    <li>
+                        <i class="fal fa-phone"></i>
+                        <p>contact@example.com</p>
+                    </li>
+                    <li>
+                        <i class="fal fa-clock"></i>
+                        <p>Monday - Saturday , 9.00am to 6.00pm</p>
+                    </li>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.092565254348!2d106.8027964112799!3d10.880563957218143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d958707f8685%3A0xd577177b5198597f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBCw6FjaCBLaG9hIC0gxJDhuqFpIGjhu41jIFF14buRYyBnaWEgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oIChjxqEgc-G7nyAyKQ!5e0!3m2!1svi!2s!4v1692247682163!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="form-details">
+            <form action="">
+                <span>LEAVE A MESSAGE</span>
+                <h2>We love to hear from you</h2>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your E-mail">
+                <input type="text" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button>Submit</button>
+            </form>
+            <div class="people">
+                <div>
+                    <img src="img/people/1.png" alt="">
+                    <p><span>John Doe</span> Senior Marketing Manager <br>
+                    Phone: +09 9999 9999 <br>
+                    Email: contact@gmail.com </p>
+                </div>
+                <div>
+                    <img src="img/people/2.png" alt="">
+                    <p><span>John Doe</span> Senior Marketing Manager <br>
+                    Phone: +09 9999 9999 <br>
+                    Email: contact@gmail.com </p>
+                </div><div>
+                    <img src="img/people/3.png" alt="">
+                    <p><span>John Doe</span> Senior Marketing Manager <br>
+                    Phone: +09 9999 9999 <br>
+                    Email: contact@gmail.com </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="newLetters">
+            <div class="newText">
+                <h4>Sign up for newLetters</h4>
+                <p>Get E-mail updates about our laster shop and <span>special offers</span></p>
+            </div>
+            <div class="form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Sign Up</button>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="col">
+                <img src="/img/logo.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong>562 Wellington Road, Street 32, San Francisco</p>
+                <p><strong>Phone: </strong> +01 9999 999 / +98 9999 9999 </p>
+                <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+                <p><strong>Follows :</strong></p>
+                <div class="icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#" class="">About Us</a>
+                <a href="#" class="">Delivery Information</a>
+                <a href="#" class="">Privacy Policy</a>
+                <a href="#" class="">Term & condition</a>   
+                <a href="#" class="">Contact Us</a>   
+            </div>
+            <div class="col">
+                <h4>My account</h4>
+                <a href="#" class="">Sign in</a>
+                <a href="#" class="">View Cast</a>
+                <a href="#" class="">My Wishlist</a>
+                <a href="#" class="">Track my order</a>   
+                <a href="#" class="">Help</a>   
+            </div>
+            <div class="col">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <a href="#"><img src="img/pay/app.jpg" alt="" class=""></a>
+                    <a href="#"><img src="img/pay/play.jpg" alt="" class=""></a>
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+        </section>
 
         <script src="./js/script.js"></script>
-
     </body>
-
 </html>
